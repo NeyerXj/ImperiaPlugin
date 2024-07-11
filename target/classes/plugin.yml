@@ -1,0 +1,25 @@
+name: ImperiaPlugin
+version: '1.0'
+main: org.example.neyer.imperiaplugin.ImperiaPlugin
+api-version: 1.20
+author: _Neyer_
+description: A plugin that warns players when they enter a restricted area and activates a protection protocol if they stay too long.
+
+commands:
+  imperia:
+    description: Main command for ImperiaPlugin
+    usage: /imperia <add|remove|setregion|msg|rep>
+    permission: imperia.admin
+permissions:
+  imperia.admin:
+    description: Allows access to all ImperiaPlugin commands
+    default: op
+  imperia.notif:
+    description: Allows sending notifications to all players
+    default: op
+  imperia.rep.change:
+    description: Allows changing player reputation
+    default: op
+  imperia.rep.list:
+    description: Allows listing player reputations
+    default: op
